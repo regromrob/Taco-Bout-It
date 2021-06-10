@@ -1,7 +1,6 @@
 {
   "name": "todolist-mvc-auth-microsoft",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
@@ -23,9 +22,20 @@
     "mongoose": "^5.12.6",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
+    "node_module": "0.0.0",
     "nodemon": "^2.0.7",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "validator": "^13.6.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regromrob/Taco-Bout-It.git"
+  },
+  "bugs": {
+    "url": "https://github.com/regromrob/Taco-Bout-It/issues"
+  },
+  "homepage": "https://github.com/regromrob/Taco-Bout-It#readme",
+  "description": ""
 }

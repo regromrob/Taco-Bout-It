@@ -14,25 +14,26 @@
 
 <nav>
   <button onclick="history.back()">Go Back</button>
-  <button class="toggle">Dark Mode</button>
+  <button class="toggle far fa-moon"></button>
 </nav>
 
   <section class='heading'>
     <h1 class='indieFlower'>Taco bout' It</h1>
   </section>
 <section class="center">
-<h1> <%= obj.name %> </h1>
+<h3> <%= obj.name %> </h3>
 
 <p class="dumpster">Address: <%= obj.address %></p>
-<p><img src="<%= obj.image%>"></p>
+<img class="smaller" src="<%= obj.image%>">
 <p class="dumpster">Review: <%= obj.review %></p>
 
  <button onclick="history.back()">Go Back</button>
 </section>
-
+    <div class= "foot">
     <footer class='center'>
         <small>©Taco Bout' It 2021</small>
     </footer>    
+    </div>
 
     <script src="/js/main.js"></script>
 </body>

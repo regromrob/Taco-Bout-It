@@ -1,6 +1,7 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+
 }
 
 /* Clear fix hack */
@@ -33,23 +34,89 @@ background-color:  #c7cedf;
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
-}
 h1{
   display: flex;
   color: #007a79;
   font-size: 5rem;
   justify-content: center;
-  /* font-family: bebas-neue,sans-serif;
-  font-weight: 400; */
   font-family: "Poppins"; 
   text-transform: uppercase;
-  line-height: 14px;
+  /* line-height: 0.8rem; */
   letter-spacing: 1.25px;
   text-align: center;
   text-decoration: underline;
 }
+
+img{
+  max-width: 25em;
+  transform: rotate(90deg);
+  border: solid rgba(0, 0, 0, 0.658);
+  padding: none;
+  margin: 0;
+}
+/* div img {
+  width: auto;
+  object-fit: fill;
+  height: auto;
+  padding: 15px
+} */
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px tablet */
+@media screen and (max-width: 542px) {
+  h1 {
+    font-size: 3rem;
+    flex-wrap: nowrap;
+    
+  }
+img{
+  max-width: 50%;
+  transform: rotate(90deg);
+  border: solid rgba(0, 0, 0, 0.658);
+  padding: none;
+  margin: 0;
+}
+.link{
+  width: 70%;
+  color: #002a29;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  font-family: bebas-neue,sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+.parentlink {
+  display: flex;
+  justify-content: center;
+}
+
+.whitespace {
+  display: flex;
+  margin: 10px 0;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-around;
+}
+}
+
+
+/* (min-width: 641px) and */
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px phone*/
+/* @media screen and (max-width: 640px)   {
+  h1 {
+    font-size: 50px;
+  }
+}  */
 .link{
   color: #002a29;
   font-size: 1.3rem;
@@ -58,42 +125,37 @@ h1{
   font-family: bebas-neue,sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  line-height: 14px;
+  line-height: 32px;
   letter-spacing: 3px;
   padding-top: 1em;
 }
-.taco{
-  width: 25em;
-  transform: rotate(90deg);
-  border: solid rgba(0, 0, 0, 0.658);
-  padding: none;
-  margin: 0;
-}
-.signUp{
+
+
+/* .signUp{
   background-color: transparent; 
   color: rgb(34, 34, 34);
   border: 1.5px solid rgb(34, 34, 34);
   border-radius: 0px;
   padding: 1em 1em;
-  cursor: pointer;
+  cursor: pointer; */
   /**text adjustments **/
-  font-family: bebas-neue,sans-serif;
+  /* font-family: bebas-neue,sans-serif;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 14px;
   letter-spacing: 3px;
-  text-align: center;
+  text-align: center; */
   /** Animation **/
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  transition: all .3s ease;	
+  transition: all .3s ease;	 */
   /** Flexbox **/
-  width: auto;
+  /* width: auto;
   resize: both;
   margin: 5px;
-}
+} */
 .submit{
   background-color: transparent; 
   color: rgb(34, 34, 34);
@@ -150,9 +212,9 @@ input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 /*************** Is this needed? ****************/
-.input{
+/* .input{
   style: none;
-}
+} */
 /*************** --------------- ****************/
 footer {
   border-top: 2px solid white;
@@ -174,5 +236,12 @@ footer {
 }
 
 .whitespace {
-  padding-bottom: 1em 
+  padding-bottom: 1em;
+  align-items: center;
+}
+
+.whitespace input {
+  vertical-align: middle;
+  padding: 10px;
+  
 }
